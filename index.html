@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <script type="text/javascript"
+          src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=q4_fBr5dC1xRMlBlNpT_DvmBEpTc_7Aw1Oonpwhf4bce7wlUp4GkXK6JlRx0aP0P1JjmYBaVZOQ0x7MDBDaztgCpnQD-MS-ylPicOPp22mY"
+          charset="UTF-8"></script>
+     <title>sample2</title>
+     <style>
+          .row {
+               display: flex;
+               flex-wrap: nowrap;
+          }
+
+          .column {
+               flex: 50%;
+               padding: 10px;
+               text-align: left;
+          }
+
+          p {
+               word-wrap: break-word;
+               padding-left: 20px;
+          }
+
+          .tab1 {
+               word-wrap: break-word;
+               padding-left: 20px;
+          }
+
+          .tab2 {
+               word-wrap: break-word;
+               padding-left: 40px;
+          }
+
+          footer {
+               margin-top: 50px;
+               border-top: 1px solid silver;
+               font-size: 0.8em;
+          }
+
+          footer ol {
+               padding-left: 20px;
+          }
+
+          /** * Initialiazing a `footnotes` counter on the wrapper */
+          article {
+               counter-reset: footnotes;
+          }
+
+          /** * Inline footnotes references * 1. Increment the counter at each new reference * 2. Reset link styles to make it appear like regular text */
+          [aria-describedby="footnote-label"] {
+               counter-increment: footnotes;
+               /* 1 */
+               text-decoration: none;
+               /* 2 */
+               color: inherit;
+               /* 2 */
+               cursor: default;
+               /* 2 */
+               outline: none;
+               /* 2 */
+          }
+
+          /** * Actual numbered references * 1. Display the current state of the counter (e.g. `[1]`) * 2. Align text as superscript * 3. Make the number smaller (since it's superscript) * 4. Slightly offset the number from the text * 5. Reset link styles on the number to show it's usable */
+          [aria-describedby="footnote-label"]::after {
+               content: '[' counter(footnotes) ']';
+               /* 1 */
+               vertical-align: auto;
+               /* 2 */
+               font-size: 1em;
+               /* 3 */
+               margin-left: 2px;
+               /* 4 */
+               color: blue;
+               /* 5 */
+               text-decoration: underline;
+               /* 5 */
+               cursor: pointer;
+               /* 5 */
+               -webkit-user-select: text;
+               -moz-user-select: text;
+               -ms-user-select: text;
+               user-select: text;
+          }
+
+          [aria-describedby="footnote-label"]::after {
+               -webkit-user-select: text;
+               -moz-user-select: text;
+               -ms-user-select: text;
+               user-select: text;
+          }
+
+          /** * Resetting the default focused styles on the number */
+          [aria-describedby="footnote-label"]:focus::after {
+               outline: thin dotted;
+               outline-offset: 2px;
+               color: brown;
+               font-weight: bold;
+          }
+
+          [aria-label="Back to content"] {
+               font-size: 1em;
+               color: darkblue;
+          }
+
+          /** * Highlight target note */
+          footer :target {
+               background: lightgrey;
+          }
+
+          /** * Visually hidden yet accessible content */
+          .p {
+               color: red;
+               font-style: italic;
+          }
+
+          #developedby {
+               font-style: italic;
+               color: brown;
+          }
+
+          /* Style for the link container */
+          .link-container {
+               position: fixed;
+               bottom: 50%;
+               left: 0;
+               right: 0;
+               text-align: bottom;
+          }
+
+          /* Style for the links */
+          .link-container a {
+               color: rgba(255, 38, 0, 0.971);
+               text-decoration: none;
+               display: inline-block;
+               margin-right: 20px;
+               font-size: larger;
+          }
+     </style>
+</head>
+
+<body>
+
+
+     <center>श्रीसरस्वत्यै नमः <a id="TOP"></a></center><BR><a
+          href="https://shivaprasadacharya.github.com/sample1.git.io/" target="_blank">Single Column</a>
+     <div class="hyperlink">
+          <h2 id="">Content</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#bbb;">
+                    <p><a href="#ZA1">A1</a></p>
+                    <p><a href="#ZB2">B2</a></p>
+                    <p><a href="#ZC3">C3</a></p>
+                    <p><a href="#ZD4">D4</a></p>
+                    <p><a href="#ZE5">E5</a></p>
+                    <p><a href="#ZF6">F6</a></p>
+                    <p><a href="#ZG7">G7</a></p>
+                    <p><a href="#ZH8">H8</a></p>
+                    <p><a href="#ZI9">I9</a></p>
+               </div>
+
+
+               <div class="column" style="background-color:#aaa;">
+                    <p><a href="#ZJ10">J10</a></p>
+                    <p><a href="#ZK11">K11</a></p>
+                    <p><a href="#ZL12">L12</a></p>
+                    <p><a href="#ZM13">M13</a></p>
+                    <p><a href="#ZN14">N14</a></p>
+                    <p><a href="#ZO15">O15</a></p>
+                    <p><a href="#ZP16">P16</a></p>
+                    <p><a href="#ZQ17">Q17</a></p>
+                    <p><a href="#ZR18">R18</a></p>
+               </div>
+
+               <div class="column" style="background-color:#bbb;">
+                    <p><a href="#ZS19">S19</a></p>
+                    <p><a href="#ZT20">T20</a></p>
+                    <p><a href="#ZU21">U21</a></p>
+                    <p><a href="#ZV22">V22</a></p>
+                    <p><a href="#ZW23">W23</a></p>
+                    <p><a href="#ZX24">X24</a></p>
+                    <p><a href="#ZY25">Y25</a></p>
+                    <p><a href="#ZZ26">Z26</a></p>
+                    <p><a href="#ZExtra">Extra</a></p>
+                    <p><a href="#ZENDNOTES">ENDNOTES</a></p>
+               </div>
+          </div>
+     </div>
+
+     <article>
+          <h2 id="ZA1">A1</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZB2">B2</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZC3">C3</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZD4">D4</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZE5">E5</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZF6">F6</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZG7">G7</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZH8">H8</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZI9">I9</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZJ10">J10</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZK11">K11</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZL12">L12</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZM13">M13</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZN14">N14</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZO15">O15</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <h2 id="ZP16">P16</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <h2 id="ZQ17">Q17</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <h2 id="ZR18">R18</h2>
+          <h3>Ravana Strotram</h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+                    <p>जटाटवीगलज्जल प्रवाहपावितस्थले<br>
+                         गलेऽवलम्ब्य लम्बितां भुजंगतुंगमालिकाम्‌।</br>
+                         डमड्डमड्डमड्डमनिनादवड्डमर्वयं<br>
+                         चकार चंडतांडवं तनोतु नः शिवः शिवम ॥१॥ </p>
+
+                    <p>जटा कटा हसंभ्रम भ्रमन्निलिंपनिर्झरी ।<br>
+                         विलोलवी चिवल्लरी विराजमानमूर्धनि ।<br>
+                         धगद्धगद्ध गज्ज्वलल्ललाट पट्टपावके<br>
+                         किशोरचंद्रशेखरे रतिः प्रतिक्षणं ममं ॥२॥</p>
+
+                    <p>धरा धरेंद्र नंदिनी विलास बंधुवंधुर-<br>
+                         स्फुरदृगंत संतति प्रमोद मानमानसे ।<br>
+                         कृपाकटा क्षधारणी निरुद्धदुर्धरापदि<br>
+                         कवचिद्विगम्बरे मनो विनोदमेतु वस्तुनि ॥३॥</p>
+
+                    <p>जटा भुजं गपिंगल स्फुरत्फणामणिप्रभा-<br>
+                         कदंबकुंकुम द्रवप्रलिप्त दिग्वधूमुखे ।<br>
+                         मदांध सिंधु रस्फुरत्वगुत्तरीयमेदुरे<br>
+                         मनो विनोदद्भुतं बिंभर्तु भूतभर्तरि ॥४॥</p>
+
+                    <p>सहस्र लोचन प्रभृत्य शेषलेखशेखर-<br>
+                         प्रसून धूलिधोरणी विधूसरांघ्रिपीठभूः ।<br>
+                         भुजंगराज मालया निबद्धजाटजूटकः<br>
+                         श्रिये चिराय जायतां चकोर बंधुशेखरः ॥५॥
+                    </p>
+                    <p>ललाट चत्वरज्वलद्धनंजयस्फुरिगभा-<br>
+                         निपीतपंचसायकं निमन्निलिंपनायम्‌ ।<br>
+                         सुधा मयुख लेखया विराजमानशेखरं<br>
+                         महा कपालि संपदे शिरोजयालमस्तू नः ॥६॥</p>
+
+                    <p>कराल भाल पट्टिकाधगद्धगद्धगज्ज्वल-<br>
+                         द्धनंजया धरीकृतप्रचंडपंचसायके ।<br>
+                         धराधरेंद्र नंदिनी कुचाग्रचित्रपत्रक-<br>
+                         प्रकल्पनैकशिल्पिनि त्रिलोचने मतिर्मम ॥७॥</p>
+
+                    <p>नवीन मेघ मंडली निरुद्धदुर्धरस्फुर-<br>
+                         त्कुहु निशीथिनीतमः प्रबंधबंधुकंधरः ।<br>
+                         निलिम्पनिर्झरि धरस्तनोतु कृत्ति सिंधुरः<br>
+                         कलानिधानबंधुरः श्रियं जगंद्धुरंधरः ॥८॥ </p>
+
+                    <p>प्रफुल्ल नील पंकज प्रपंचकालिमच्छटा-<br>
+                         विडंबि कंठकंध रारुचि प्रबंधकंधरम्‌<br>
+                         स्मरच्छिदं पुरच्छिंद भवच्छिदं मखच्छिदं<br>
+                         गजच्छिदांधकच्छिदं तमंतकच्छिदं भजे ॥९॥</p>
+
+                    <p>अगर्वसर्वमंगला कलाकदम्बमंजरी-<br>
+                         रसप्रवाह माधुरी विजृंभणा मधुव्रतम्‌ ।<br>
+                         स्मरांतकं पुरातकं भावंतकं मखांतकं<br>
+                         गजांतकांधकांतकं तमंतकांतकं भजे ॥१०॥</p>
+
+                    <p>जयत्वदभ्रविभ्रम भ्रमद्भुजंगमस्फुर-<br>
+                         द्धगद्धगद्वि निर्गमत्कराल भाल हव्यवाट्-<br>
+                         धिमिद्धिमिद्धिमि नन्मृदंगतुंगमंगल-<br>
+                         ध्वनिक्रमप्रवर्तित प्रचण्ड ताण्डवः शिवः ॥११॥</p>
+
+                    <p>दृषद्विचित्रतल्पयोर्भुजंग मौक्तिकमस्रजो-<br>
+                         र्गरिष्ठरत्नलोष्टयोः सुहृद्विपक्षपक्षयोः ।<br>
+                         तृणारविंदचक्षुषोः प्रजामहीमहेन्द्रयोः<br>
+                         समं प्रवर्तयन्मनः कदा सदाशिवं भजे ॥१२॥</p>
+
+                    <p>कदा निलिंपनिर्झरी निकुजकोटरे वसन्‌<br>
+                         विमुक्तदुर्मतिः सदा शिरःस्थमंजलिं वहन्‌।<br>
+                         विमुक्तलोललोचनो ललामभाललग्नकः<br>
+                         शिवेति मंत्रमुच्चरन्‌कदा सुखी भवाम्यहम्‌॥१३॥</p>
+
+                    <p>निलिम्प नाथनागरी कदम्ब मौलमल्लिका-<br>
+                    निगुम्फनिर्भक्षरन्म धूष्णिकामनोहरः ।<br>
+                    तनोतु नो मनोमुदं विनोदिनींमहनिशं<br>
+                    परिश्रय परं पदं तदंगजत्विषां चयः ॥१४॥</p>
+
+                    <p>प्रचण्ड वाडवानल प्रभाशुभप्रचारणी<br>
+                         महाष्टसिद्धिकामिनी जनावहूत जल्पना ।<br>
+                         विमुक्त वाम लोचनो विवाहकालिकध्वनिः<br>
+                         शिवेति मन्त्रभूषगो जगज्जयाय जायताम्‌ ॥१५॥</p>
+
+                    <p>इमं हि नित्यमेव मुक्तमुक्तमोत्तम स्तवं<br>
+                         पठन्स्मरन्‌ ब्रुवन्नरो विशुद्धमेति संततम्‌।<br>
+                         हरे गुरौ सुभक्तिमाशु याति नांयथा गतिं<br>
+                         विमोहनं हि देहना तु शंकरस्य चिंतनम ॥१६॥</p>
+
+                    <p>पूजाऽवसानसमये दशवक्रत्रगीतं<br>
+                         यः शम्भूपूजनमिदं पठति प्रदोषे ।<br>
+                         तस्य स्थिरां रथगजेंद्रतुरंगयुक्तां<br>
+                         लक्ष्मी सदैव सुमुखीं प्रददाति शम्भुः ॥१७॥</p>
+
+                    <p>॥ इति शिव तांडव स्तोत्रं संपूर्णम्‌॥ </p>
+                    <p><b>छन्द:</b> पञ्चाचामर</p>
+
+                    <p>जटा ट वी गलज् जल प्रवाह पावि तस् थले<br>
+                         गलेऽव लम् ब्य लम् बिताम् भुजन्ग तुन्ग मालिकाम्‌।<br>
+                         डमड् डमड् डमड् डमन् निनाद वड् डमर वयम्<br>
+                         चकार चण्ड ताण्डवम् तनोतु नः शिव: शिवम्‌ ॥1॥</p>
+
+
+                         <p>
+जटा कटाह सम् भ्रम भ्रमन् नि लिम्प निर् झरी<br>
+                         विलोल वीचि वल् लरी विराज मान मूर् धनि।<br>
+                         धगद् धगद् धगज् ज्वलल् ललाट पट्ट पावके<br>
+                         किशोर चन्द्र शेखरे रतिः प्रति क्षणम् मम ॥2॥</p>
+
+
+                         <p>
+धरा धरेन्द्र नन् दिनी विलास बन्धु बन् धुरस्<br>
+                         फुरद् दिगन्त सन् तति प्रमोद मान मानसे।<br>
+                         कृपा कटाक्ष धो रणी निरुद् ध दुर् धरा पदि<br>
+                         क्व चिद् दिगम् बरे मनो विनोद मेतु वस्तुनि ॥3॥</p>
+                    
+                         <p>
+जटा भुजङ्ग पिङ् गलस् फुरत् फणा मणि प्रभा-<br>
+                         कदम्ब कुङ्कुम द्रव प्रलिप्त दिग्व धू मुखे ।<br>
+                         मदान्ध सिन्धुर स्फुरत् वगुत्त रीय मेदुरे<br>
+                         मनो विनोद मद् भुतम् बिभर्तु भूत भर् तरि ॥4॥</p>
+
+
+                         <p>
+सहस्र लोच न प्रभृ त्य शेष लेख शेखर-<br>
+                         प्रसून धूलि धोरणी विधू सरा ङिघ्र पीठभूः ।<br>
+                         भुजङ्ग राज मालया निबद् ध जाट जूटकः<br>
+                         श्रियै चिराय जायताम् चकोर बन्धु शेखरः ॥5॥</p>
+
+                         <p>
+ललाट चत्वर ज्व लद् धनञ्जय स्फु लिङ्गभा-<br>
+                         निपीत पञ्च सायकम् नमन् निलिम्प नायकम्‌ ।<br>
+                         सुधा मयूख लेखया विराज मान शेखरम्<br>
+                         महा कपालि सम् पदे शिरो जटाल मस् तुनः ॥6॥</p>
+
+                         <p>
+कराल भाल पट् टिका धगद् धगद् धगज् ज्वलद्<br>
+धनञ् जया हुती कृत प्रचण्ड पञ्च सायके ।<br>
+धरा धरेन्द्र नन्दिनी कुचाग्र चित्र पत्रक-<br>
+प्रकल्प नैक शिल् पिनि त्रिलोचने रतिर् मम ॥7॥</p>
+
+<p>
+नवीन मेघ मण्डली नि रुद् ध दुर् धरस् फुरत्<br>
+कुहू निशी थिनी तमः प्रबन्ध बद्ध कन्धरः ।<br>
+निलिम्प निर्झरी धरस् तनोतु कृत्ति सिन्धुरः<br>
+कला निधान बन्धुरः श्रियम् जगद् धुरन् धर: ॥8॥</p>
+
+<p>
+प्रफुल्ल नील पङकज प्रपञ्च कालि म प्रभा<br>
+वलम्बि कण्ठ कन्दली रुचि प्रबद्ध कन्धरम्‌।<br>
+स्मरच् छिदम् पुरच् छिदम् भवच् छिदम् मखच् छिदम्<br>
+गजच् छि दान्ध कच् छिदम् तमन्त कच् छिदम् भजे ॥9॥</p>
+
+<p>
+अखर्व सर्व मङ्गला कला कदम्ब मञ्जरी<br>
+रस प्रवाह माधुरी विजृम् भणा मधु व्रतम्‌।<br>
+स्मरान् तकम् पुरान् तकम् भवान् तकम् मखान् तकम्<br>
+गजान् त कान् ध कान्तकम् तमन्त कान्तकम् भजे ॥10॥</p>
+
+<p>
+जयत् वदभ्र विभ्रम भ्रमद् भुजङ्ग मश्वस<br>
+द्विनिर्ग मत् क्रमस् फुरत् कराल भाल हव्य वाट्।<br>
+धिमिद् धिमिद् धिमिद् ध्वनन् मृदङ्ग तुङ्ग मङ्गल<br>
+ध्वनि क्रम प्रवर् तित प्रचण्ड ताण्डवः शिवः ॥11॥</p>
+
+<p>
+दृषद् विचित्र तल्प योर् भुजङ्ग मौक्ति कस्र जोर<br>
+गरिष्ठ रत्न लोष्ठयोः सुहृद् विपक्ष पक्ष योः।<br>
+तृणार विन्द चक्षुषोः प्रजा मही महेन्द्रयोः<br>
+सम प्रवृत्ति कः कदा सदा शिवं भजाम्यहम् ॥12॥</p>
+
+<p>
+कदा निलिम्प निर्झरी निकुञ्ज कोटरे वसन्‌<br>
+विमुक्त दुर् मतिः सदा शिरःस्थ मञ्जलिम् वहन्‌।<br>
+विलोल लोल लोचनो ललाम भाल लग्नकः<br>
+शिवेति मन्त्र मुच्चरन्‌ कदा सुखी भवाम्यहम्‌ ॥13॥</p>
+
+<p>
+इमं हि नित्य मेव मुक्त मुत्त मोत्तम् स्तवम्<br>
+पठन् स्मरन्‌ ब्रुवन् नरो विशुद्धि मेति सन्ततम्‌।<br>
+हरे गुरौ सुभक्ति माशु याति नान्यथा गतिं<br>
+विमोहनं हि देहिनांं सुशङ्करस्य चिंतनम् ॥16॥</p>
+
+<p>
+पूजा ऽवसान समये दश वक्त गीतं<br>
+यः शम्भू पूजन परम् पठति प्रदोषे।<br>
+तस्य स्थिरां रथ गजेन्द्र तुरङ्ग युक्ताम्<br>
+लक्ष्मिम् सदैव सुमुखिम् प्रददाति शम्भुः ॥17॥</p>
+
+<p>इति श्रीरावण- कृतम् शिव- ताण्डव- स्तोत्रम् सम्पूर्णम्</p>
+
+                    
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p>जटाबाट बगेको जलले पवित्र भएको कण्ठ,<br>
+                         घाँटीमा मालाको रूपमा झुण्डिएको सर्प,<br>
+                         अनि डमरूको डमट् डमट् डमट् ध्वनिको तालमा,<br>
+                         महादेव शिव अद्‌भुत ताण्डव नृत्य गरिरहनु भएको छ—<br>
+                         उहाँको कृपाले हामी सबै सम्पन्न र समृद्ध बन्न सकौँ ।1<br>
+                         </p>
+                         <p>भगवान शिवप्रति मेरो गहिरो अभिरुचि छ,<br>
+                              जसको शिर अलौकिक गङ्गा नदीमा बगिरहने लहरका धाराहरूले सुशोभित भएको छ,<br>
+                              जसको निधारको सतहमा तेजस्वी अग्नि प्रज्ज्वलित भइरहन्छ,<br>
+                              अनि जसले आफ्नो शिरमा आभूषणको रूपमा अर्ध–चन्द्रमा धारण गर्नुभएको छ ।2</p>
+                    <p>मेरो मनले भगवान शिवमा केवल खुसी खोजिरहोस्,<br>
+                         जसको मनमा अद्‌भुत ब्रह्माण्डको सम्पूर्ण जीवहरूको वास छ,<br>
+                         जसकी अर्धाङ्गिनी पर्वतराजकी पुत्री पार्वती हुनुहुन्छ,<br>
+                         जो सर्वत्र व्याप्त रहेको आफ्नो करुणामयी दृष्टिले असाधारण विपत्तिहरू नियन्त्रित गर्नुहुन्छ,<br>
+                         अनि जसले दिव्य लोकहरूलाई आफ्नो पोशाक जसरी धारण गर्नुभएको छ ।3</p>
+                    <p>मलाई भगवान शिवमा अद्‌भुत सुख मिलोस्, जो सम्पूर्ण जीवनको रक्षक हुनुहुन्छ,<br>
+                         उहाँको सर्पको खैरो–रातो फणा अनि फणामाथि चम्किरहेको मणिले<br>
+                         त्यस दिशाका देवीहरूको सुन्दर अनुहारमा भिन्न–भिन्न रङ्गहरू छरिरहेको छ,<br>
+                         जुन विशाल र मदमत्त हात्तीको छालाबाट बनेको चमचमाउँदो दोसल्लाबाट ढाकिएको छ ।4</p>
+                    <p>भगवान शिवको कृपाले हामीलाई सम्पन्नता र समृद्धि मिलोस्,<br>
+                         जोसँग ताजको रूपमा चन्द्रमा छ,<br>
+                         जसको कपाल रातो नागको हारबाट बाँधिएको छ,<br>
+                         जसको पाउदान इन्द्र, विष्णु र अन्य देवताहरूको शिरबाट अर्पित फूलहरूबाट बगेको धुलोले गाढा रङ्गको भएको छ ।5</p>
+                    <p>शिवका जटाहरूबाट हामीले सिद्धिहरू प्राप्त गर्न सकौँ,<br>
+                         जसले कामवासनाको देवता कामदेवलाई<br>
+                         आफ्नो निधारमा सल्किएको अग्निको झिल्काले भष्म गर्नुभएको थियो,<br>
+                         जो देवलोकका सबै स्वामीहरूको आदरणीय हुनुहुन्छ,<br>
+                         जो अर्ध–चन्द्रबाट सुशोभित हुनुहुन्छ ।<br>
+                         6</p>
+                    <p>मेरो अभिरुचि भगवान शिवमा छ, जोसँग तेस्रो नेत्र छ,<br>
+                         जसले शक्तिशाली कामदेवलाई अग्निमा होमिदिनु भयो,<br>
+                         जसको विशाल निधारको सतह डगद् डगद्...को ध्वनिले दन्किरहन्छ,<br>
+                         उहाँ एकमात्र यस्तो कलाकार हुनुहुन्छ, जो पर्वतराजकी पुत्री पार्वतीको स्तनको टुप्पोमा<br>
+                         सजावटी रेखाहरू कोर्न निपुण हुनुहुन्छ।7</p>
+                    <p>भगवान शिवको कृपाले हामीलाई सम्पन्नता र समृद्धि मिलोस्,<br>
+                         जसले पूरै संसारको भार उठाउनुहुन्छ,<br>
+                         जो चन्द्रमाले मनमोहक बन्नुभएको छ,<br>
+                         जोसँग अलौकिक गङ्गा नदी छिन्,<br>
+                         जसको घाँटी तह–तहका बादलहरूले ढाकिएको औँशीको मध्यरात जस्तै अन्धकार छ।८</p>
+                    <p>म भगवान शिवको प्रार्थना गर्दछु, जसको कण्ठ मन्दिरहरूको चमकले घेरिएको छ,<br>
+                         जुन पूरै फक्रिएको नीलकमल फूलहरूको गरिमाले सुशोभित छ,<br>
+                         उहाँको कण्ठ ब्रह्माण्डको कालिमा (कालोपन) जस्तै देखिन्छ,<br>
+                         शिव— जसले त्रिपुरको विनाश गर्ने कामदेवलाई समाप्त गर्नुभयो,<br>
+                         जसले सांसारिक जीवनका बन्धनहरू नष्ट गर्नुभयो,<br>
+                         जसले बलिको अन्त्य गर्नुभयो, जसले अन्धक दानवलाई समाप्त गर्नुभयो,<br>
+                         अनि जसले मृत्युको देवता यमलाई समेत पराजित गर्नुभयो ।९</p>
+                    <p>म भगवान शिवको प्रार्थना गर्दछु, जसको वरपर मौरी उडिरहेका हुन्छन्,<br>
+                         किनकि शुभ मानिने कदम्ब फूलहरूको सुन्दर गुच्छाबाट महको मधुर सुगन्ध आइरहेको छ,<br>
+                         भगवान शिव जसले त्रिपुरासुरको विनाशक कामदेवलाई भस्म गरिदिनुभयो,<br>
+                         जसले सांसारिक जीवनका बन्धनहरू नष्ट गर्नुभयो,<br>
+                         जसले बलिको अन्त्य गर्नुभयो, जसले अन्धक दानवलाई समाप्त गर्नुभयो,<br>
+                         अनि जो यमराजको पनि यमराज हुनुहुन्छ ।१०</p>
+                    <p>शिवको ताण्डव नृत्य, नगाढाबाट चर्को आवाजमा निस्किएको<br>
+                         'ढिमिड ढिमिड' को श्रृङ्खलासँग लयमा छ,<br>
+                         शिवको विशाल निधारमा अग्नि प्रज्ज्वलित छ,<br>
+                         जुन भव्य आकाशमा गोल–गोल घुमिरहेको नागको श्वासले गर्दा फैलिएको हो,११</p>
+                    <p>म कतिखेर शाश्वत शुभ देवता, भगवान सदाशिवको पूजा गर्न सक्नेछु,<br>
+                         जसले सम्राटहरू र साधारण मानिसहरूप्रति,<br>
+                         घासको पत्ता र कमलप्रति, मित्रहरू र शत्रुहरूप्रति<br>
+                         सर्वाधिक मूल्यवान रत्न र धूलोको थुप्रोप्रति,<br>
+                         सर्प र हारप्रति अनि विश्वमा भएका विभिन्न रूपहरूप्रति समभाव राख्नुहुन्छ,<br>
+                         १२</p>
+                    <p>अलौकिक गङ्गा नदीको निकट गुफामा रहेर,<br>
+                         आफ्ना हातहरूलाई जतिबेला पनि बाँधी आफ्नो शिरमा राखेर,<br>
+                         शिव–मन्त्र उच्चारण गरी आफ्ना दूषित विचारहरूलाई पखालेर,<br>
+                         विशाल निधार र जीवन्त नेत्रहरू भएका भगवानप्रति समर्पित रहेर,<br>
+                         म यत्तिकै प्रसन्न रहन सकूँ । १३</p>
+                    <p>यो स्तोत्र जुन रूपमा यहाँ उल्लेख गरिएको छ,<br>
+                         सोही अनुरूप जो–जसले पढ्छन्, स्मरण गर्छन् वा सुन्छन्,<br>
+                         ती सधैँका लागि पवित्र हुन्छन् अनि महान् गुरु शिवको भक्तिको पात्र बन्दछन्,<br>
+                         यो भक्तिको लागि अर्को कुनै मार्ग वा तरिका छैन,<br>
+                         महादेव शिवको विचार गर्नाले मात्रै पनि सबै भ्रमहरू मेटिन्छन् ।१६</p>
+                    
+
+                    
+                              <p>jaṭāṭavī-galaj-jala-pravāha-pāvita-sthale<br>
+                         gale 'valambya lambitāṁ bhujaṅga-tuṅga-mālikām ।<br>
+                         ḍamaḍ ḍamaḍ ḍamaḍ ḍaman nināda-vaḍ ḍamarvayaṁ<br>
+                         cakāra caṇḍa-tāṇḍavaṁ tanotu naḥ śivaḥ śivam ॥ 1 ॥</p>
+                    <p>jaṭā-kaṭāha-hasambhrama-bhraman-nilimpa-nirjharī-<br>
+                         vilola-vīci-vallarī-virāja-māna-mūrdhani ।<br>
+                         dhagad-dhagad-dhagaj-jvalal-lalāṭa-paṭṭa-pāvake<br>
+                         kiśora-candra-śekhare ratiḥ pratikṣaṇaṁ mama ॥ 2 ॥</p>
+                    <p>dharādharendra-nandinī-vilāsa-bandhu-bandhura-<br>
+                         sphurad-diganta-santati-pramoda-māna-mānase ।<br>
+                         kṛpā-kaṭākṣa-dhoraṇī-niruddha-durdharāpadi<br>
+                         kvacid digambare (kvacic cidambare) mano vinodam etu vastuni ॥ 3 ॥</p>
+                    <p>jaṭā-bhujaṅga-piṅgala-sphurat phaṇā-maṇi-prabhā<br>
+                         kadamba-kuṅkuma-drava-pralipta-dig-vadhū-mukhe ।<br>
+                         madāndhasindhura-sphurat tvag-uttarīyamedure<br>
+                         mano-vinodam adbhutaṁ bibhartu bhūta-bhartari ॥ 4 ॥</p>
+                    <p>sahasra-locana-prabhṛtya-śeṣalekha-śekhara-<br>
+                         prasūna-dhūli-dhoraṇī vidhū-sarāṅghri-pīṭha-bhūḥ ।<br>
+                         bhujaṅga-rājamālayā nibaddha-jāṭajūṭaka-<br>
+                         śriyai cirāya jāyatāṁ cakora-bandhu-śekharaḥ ॥ 5 ॥</p>
+                    <p>lalāṭa-catvara-jvalad dhanañjaya-sphuliṅgabhā<br>
+                         nipīta-pañca-sāyakaṁ naman nilimpa-nāyakam ।<br>
+                         sudhā-mayūkha-lekhayā virājamāna-śekharaṁ<br>
+                         mahā-kapāli-sampade śiro-jaṭālam astu naḥ ॥ 6 ॥</p>
+                    <p>karāla-bhāla-paṭṭikā dhagad dhagad dhagaj jvalad<br>
+                         dhanañjayāhutīkṛta-pracaṇḍa-pañca-sāyake ।<br>
+                         dharādharendra-nandinī-kucāgra-citra-patraka-<br>
+                         prakalpanaikaśilpini-trilocane ratir mama ॥ 7 ॥</p>
+                    <p>navīna-megha-maṇḍalī niruddha-durdhara-sphurat<br>
+                         kuhū-niśīthinī-tamaḥ prabandha-baddha-kandharaḥ ।<br>
+                         nilimpa-nirjharī-dharas tanotu kṛtti-sindhuraḥ<br>
+                         kalā-nidhāna-bandhuraḥ śriyaṁ jagad-dhuraṁ-dharaḥ ॥ 8 ॥</p>
+                    <p>praphulla-nīla-paṅkaja-prapañca-kālima-prabhā-<br>
+                         valambi-kaṇṭha-kandalī ruchi-prabaddha-kandharam ।<br>
+                         smara-cchidaṁ pura-cchidaṁ bhava-cchidaṁ makha-cchidaṁ<br>
+                         gaja-cchidāndhaka-cchidaṁ tam antaka-cchidaṁ bhaje ॥ 9 ॥</p>
+                    <p>akharva-sarva-maṅgalā kalā-kadamba-mañjarī<br>
+                         rasa-pravāha-mādhurī vijṛmbhaṇā madhu-vratam ।<br>
+                         smarāntakaṁ purāntakaṁ bhavāntakaṁ makhāntakaṁ<br>
+                         gajāntakāndhakāntakaṁ tam antakāntakaṁ bhaje ॥ 10 ॥</p>
+                    <p>jayatvada bhravi-bhrama-bhramad bhujaṅgam aśvasad<br>
+                         vinirgamat krama-sphurat karāla-bhāla-havyavāṭ ।<br>
+                         dhimid dhimid dhimi-dhvanan mṛdaṅga-tuṅga-maṅgala-<br>
+                         dhvani-krama-pravartita-pracaṇḍa-tāṇḍavaḥ śivaḥ ॥ 11 ॥</p>
+                    <p>dṛṣad vicitra-talpayor bhujaṅga-mauktika-srajor<br>
+                         gariṣṭha-ratna-loṣṭhayoḥ suhṛd-vipakṣa-pakṣayoḥ ।<br>
+                         tṛṇāravinda-cakṣuṣoḥ prajāmahī mahendrayoḥ<br>
+                         samaṁ pravṛttikaḥ kadā sadāśivaṁ bhajamy aham ॥ 12 ॥</p>
+                    <p>kadā nilimpa-nirjharī-nikuñja-koṭare vasan<br>
+                         vimukta-durmatiḥ sadā śiraḥstham añjaliṁ vahan ।<br>
+                         vimukta-lola-locano lalām abhāla-lagnakaḥ<br>
+                         śiveti mantram uccaran kadā sukhī bhavāmy aham ॥ 13 ॥</p>
+                    <p>nilimpa-nātha-nāgarī-kadamba-mola-mallikaḥ<br>
+                         nigumapha-nirbhara-kṣaran-madhūṣṇikā-manoharaḥ ।<br>
+                         tanotu no manomudaṁ vinodinīm ahar-niśaṁ<br>
+                         pariśrayaṁ paraṁ padaṁ tad-aṅgaja-tviṣāṁ cayaḥ ॥ 14 ॥</p>
+                    <p>imaṁ hi nityam evam uktam uttamottamaṁ stavaṁ<br>
+                         paṭhan smaran bruvan naro viśuddhim eti santatam ।<br>
+                         hare gurau subhaktim āśu yāti nānyathā gatiṁ<br>
+                         vimohanaṁ hi dehināṁ suśaṅkarasya cintanam ॥ 15 ॥</p>
+                    <p>pūjāvasāna-samaye daśa-vaktra-gītaṁ<br>
+                         yaḥ śambhu-pūjana-paraṁ paṭhati pradoṣe ।<br>
+                         tasya sthirāṁ ratha-gajendra turaṅga-yuktāṁ<br>
+                         lakṣmīṁ sadaiva sumukhīṁ pradadāti śaṁbhuḥ ॥ 16 ॥</p>
+                    
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZS19">S19</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZT20">T20</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZU21">U21</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZV22">V22</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZW23">W23</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZX24">X24</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZY25">Y25</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZZ26">Z26</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+          <h2 id="ZExtra">Extra</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h4></h4>
+
+
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+
+
+               </div>
+          </div>
+
+          <h2 id="ZENDNOTES">Endnotes</h2>
+          <h3></h3>
+
+          <div class="row">
+               <div class="column" style="background-color:#aaa;">
+                    <h3>नमूनाको लागि </h3>
+!लेख्नुहोस् <a href="#fn7" aria-describedby="footnote-label" id="fn8"></a>!निरन्तरलेख्नुहोस्</p>
+               </div>
+               <div class="column" style="background-color:#bbb;">
+                    <h3> Only for Sample </h3>
+                    <p>xyz <a href="#fn9" aria-describedby="footnote-label" id="fn10"></a>
+                         Continue your text
+                         here</p>
+                    <p>xyz <a href="#fn11" aria-describedby="footnote-label" id="fn12"></a> Continue your text here ok
+                    </p>
+               </div>
+          </div>
+          </div>
+     </article>
+
+     <footer>
+          <h2 class="visually-hidden" id="footnote-label">Endnotes</h2>
+          <h3></h3>
+          <ol>
+               <li id="fn1">Type footnote here. <a href="https://shivaprasadacharya.github.io/BarSyllables.git.io/#EVL"
+                         target="_blank">See
+                         EVL</a> <a href="#fn2" aria-label="Back to content">[&#x21A9;]</a></li>
+               <li id="fn3">!TypeHere: <a href="" target="_blank">!See</a> <a href="#fn4"
+                         aria-label="Back to content">[&#x21A9;]</a></li>
+               <li id="fn5">!TypeHere: Article 2 recognizes nepalese people as sovereign<a href=""
+                         target="_blank">!See</a> <a href="#fn6" aria-label="Back to content">[&#x21A9;]</a>
+               </li>
+               <li id="fn7">!TypeHere: safety valve two<a href="" target="_blank">!See safety valve two</a> <a
+                         href="#fn8" aria-label="Back to content">[&#x21A9;]</a>
+               </li>
+               <li id="fn9">!TypeHere: HLA ROR<a href="" target="_blank">!See ROR</a> <a href="#fn10"
+                         aria-label="Back to content">[&#x21A9;]</a>
+               </li>
+               <li id="fn11">!TypeHere:safety valve<a href="" target="_blank">!See safety valve</a> <a href="#fn12"
+                         aria-label="Back to content">[&#x21A9;]</a>
+               </li>
+               <li id="fn13">Type footnote here. <a href="" target="_blank">यहाँ थिच्नुहोस्</a><a href="#fn14"
+                         aria-label="Back to content">[&#x21A9;]</a></li>
+          </ol>
+     </footer>
+     <p id="developedby"><u><b>Developed By:</b></u><br> Debaka Timilsina (M.A, M.Ed; LL.B) <br> Shiva Prasad
+          Acharya
+          (M.Sc.; LL.M)<br> श्रीपञ्चमि, २०७९ <a id="BOTTOM" href=>&#x25B2</a></p>
+
+     <div class="link-container">
+          <a href="#TOP">&#x25B2</a><BR><BR><BR>
+          <a href="#BOTTOM">&#x25BC</a>
+     </div>
+
+</body>
+
+</html>
+<!-- THIS IS FOR GENERATION OF TWO COLUMNS, THEIR HEADING AND THEIR CONTENT
+  
+  <div class="row">
+      <div class="column"
+           style="background-color:#aaa;">
+        <h3><a id=""
+             href=>&#x25BC</a><a id=""
+             href=>&#x25B2</a></h3>
+        <p>
+
+      </div>
+      <div class="column"
+           style="background-color:#bbb;">
+        <h3><a id=""
+             href=>&#x25BC</a><a id=""
+             href=>&#x25B2</a></h3>
+        <p>
+
+      </div>
+    </div>-->
+
+
+
+
+<!-- UPGRADED WITH HYPERLINK AND RETURN BACK KEY. Also way of linking a particular section of another webpage is also shown in endnote. -->
